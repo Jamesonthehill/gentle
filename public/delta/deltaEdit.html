@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>예쁜템들 모여사는 오늘의집</title>
+    <style type="text/css">
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	font-family: 잘풀리는하루;
+	margin: auto;
+}
+
+th, td {
+	padding: 8px;
+}
+
+Button, a {
+	font-family: 잘풀리는하루;
+}
+#aaa {
+	color: white;
+}
+</style>
+    
+  </head>
+ <h1 style="text-align: center;"> 
+	회원정보 수정
+</h1>
+<hr>
+
+
+<a href="../delta/deltaView.html" type="button" class="btn btn-secondary" onclick="here()">뒤로가기</a>
+<a href="../deltaMain.html" type="button" class="btn btn-info" onclick="here()">홈</a>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="font-family:잘풀리는하루; ">
+  제출하기
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">경고</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        정말 제출하시겠습니까?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">아니요(돌아가기)</button>
+        <button type="button" class="btn btn-primary"><a href="./deltaView.html"> 네(진행하기)</a></button>
+      </div>
+    </div>
+  </div>
+</div>
+ <hr>
+ 
+  <body style="float: left;">
+
+	<div style="display: inline-block;">
+	<table style="display: inline-block;">
+		<tr>
+			<td width="200px" height="200px" placeholder="사진"><image src="../images/jia.jpeg" width="190" height="190"></td>
+		</tr>
+	</table>
+	
+	<table width="800px" style="display: inline-block;">
+		<tr>
+			<td rowspan="5" width="10" bgcolor="skyblue" style="color:white">인적사항</td>
+			<td rowspan="2">이름</td>
+			<td colspan="2" style="width: 320px">한	글: 
+				<input type="textbox" id="" name="" value="제임스">
+			</td>
+			<td width="120px">성별</td>
+			<td width="250px">
+			<input type="radio" id="" name="aa" checked >&nbsp남
+			<input type="radio" id="" name="aa" >&nbsp여</td>
+			
+		</tr>
+		<tr>
+			<td colspan="2">영	어: <input type="textbox" value="James"></td>
+			<td >생년월일</td>
+			<td><input type="date" value="1994-10-30"></td>
+		</tr>
+		<tr>
+			<td>현주소</td>
+			<td colspan="4"><input type="textbox" size="50px" value="경상북도 경주로 부산시 창원구"></td> 
+		</tr>
+		<tr>
+			<td>E-Mail</td>
+			<td colspan="2"><input type="text" value="Jamesonthehill" size="12px">@ 
+			<select id="" name="">
+				<option>naver.com</option>
+				<option>hanmail.net</option>
+				<option>daum.net</option>
+				<option>gmail.com</option>
+				<option>hometax.ac.kr</option>
+			</select>
+			</td>
+			<td>마케팅수신동의</td>
+			<td>
+				<input type="radio" id="" name="bb" checked>&nbsp예
+				<input type="radio" id="" name="bb" >&nbsp아니오
+			</td>
+
+		</tr>
+		<tr>
+			<td>자택전화</td>
+			<td colspan="2"><select id="" name="">
+			<option>02</option>
+			<option>031</option>
+			<option>033</option>
+			</select> -
+			<input type="text" id="" name="" size="5px" maxlength="4" value="224">&nbsp - 
+			<input type="text" id="" name="" size="5px" maxlength="4" value="3345"></td>
+			<td>휴대폰</td>
+			<td>
+			<select id="" name="">
+			<option>010</option>
+			<option>011</option>
+			<option>070</option>
+			</select>
+			- <input type="text" id="" name="" size="5px" maxlength="4" value="3387">&nbsp -
+			<input type="text" id="" name="" size="5px" maxlength="4" value="3599"></td></td>
+		</tr>
+	</table>
+	</div>
+<div style="height:7px;"></div>
+	<table width="1000" >
+		<tr>
+			<td rowspan="4" width="10" bgcolor="skyblue" style="color:white">학력사항</td>
+			<td>학교명</td>
+			<td>재학기간</td>
+			<td>전	공</td>
+			<td>부 전공</td>
+			
+		</tr>
+		<tr>
+			<td><input type="text" value="신분당고등학교" ></td>
+			<td>
+			<input type="date" value="2013-03-01"> ~
+			<input type="date" value="2016-02-28"></td>
+			<td><input type="text" value="이과" size="4"></td>
+			<td><input type="text" value="X" size="4"></td>
+		</tr>
+		<tr>
+			<td><input type="text" value="강남중학교"></td>
+			<td>
+			<input type="date" value="2010-03-01"> ~
+			<input type="date" value="2013-02-28"></td>
+			<td><input type="text" value="X" size="4"></td>
+			<td><input type="text" value="X" size="4"></td>
+		</tr>
+		<tr style="padding: 10px;">
+			<td><input type="text" value="뉴욕대학교"></td>
+			<td>
+			<input type="date" value="2016-03-01"> ~
+			<input type="date" value="2022-02-28"></td>
+			<td><input type="text" value="컴퓨터공학과" size="4"></td>
+			<td><input type="text" value="X" size="4"></td>
+		</tr>
+	</table>
+   <div style="height:7px;">&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div>
+    <table  width="1000" >
+    	<tr>
+    		<td rowspan="4" width="10" bgcolor="skyblue" style="color:white">자격증</td>
+    		<td width="150">자격명</td>
+    		<td width="200">취득일자</td>
+    		<td width="150">발급기관</td>
+    		<td width="150">자격명</td>
+    		<td width="200">취득일자</td>
+    		<td width="150">발급기간</td>
+    	</tr>
+    	<tr>
+    			<td><input type="text" value="회계관리"></td>
+    			<td><input type="date" value="2021-02-28"></td>
+    			<td><select id="" name="">
+    			<option>대한상공회의소</option>
+    			<option>큐넷</option>
+    			<option>자격증협회</option>
+    			<option>공자격증소</option>
+    			</select></td>
+    			<td></td>
+    			<td></td>
+    			<td><select id="" name="">
+    			<option>대한상공회의소</option>
+    			<option>큐넷</option>
+    			<option>자격증협회</option>
+    			<option>공자격증소</option>
+    			</select></td>
+    			
+    	</tr>
+    	<tr>
+    			<td><input type="text" value="컴퓨터활용능력1급"></td>
+    			<td><input type="date" value="2019-02-28"></td>
+    			<td><select id="" name="">
+    			<option>대한상공회의소</option>
+    			<option>큐넷</option>
+    			<option>자격증협회</option>
+    			<option>공자격증소</option>
+    			</select>
+    			</td>
+    			<td></td>
+    			<td></td>
+    			<td><select id="" name="">
+    			<option>대한상공회의소</option>
+    			<option>큐넷</option>
+    			<option>자격증협회</option>
+    			<option>공자격증소</option>
+    			</select></td>
+
+    	</tr>
+    	<tr>
+    			<td><input type="text" value="뉴욕대학교"></td>
+    			<td><input type="date" value="2017-02-28"></td>
+    			<td><select id="" name="">
+    			<option>대한상공회의소</option>
+    			<option>큐넷</option>
+    			<option>자격증협회</option>
+    			<option>공자격증소</option>
+    			</select></td>
+    			<td></td>
+    			<td></td>
+    			<td><select id="" name="">
+    			<option>대한상공회의소</option>
+    			<option>큐넷</option>
+    			<option>자격증협회</option>
+    			<option>공자격증소</option>
+    			</select></td>
+ 
+    	</tr>
+    	
+    	</table>
+    	</div>
+    	<div style="height:7px;"></div>
+    	
+    <table width="1000" >
+		<tr>
+			<td rowspan="4" width="10" bgcolor="skyblue" style="color:white">가족사항</td>
+			<td>관계</td>
+			<td>성	명</td>
+			<td>연 령</td>
+			<td>합 력</td>
+			<td>직 업</td>
+			<td>동 거</td>
+			<td id="aaa" rowspan="5" width="10" style="background-color: skyblue;">기타사항</td>
+			<td colspan="2">(한)타/분 350타</td>
+			
+		</tr>
+		<tr>
+			<td><select id="" name="">
+    			<option>부</option>
+    			<option>모</option>
+    			<option>형</option>
+    			<option>누이</option>
+    			</select></td>
+			<td><input type="text" value="존존스"></td>
+			<td><input type="text" value="58"></td>
+			<td><select id="" name="">
+    			<option>대졸</option>
+    			<option>고졸</option>
+    			<option>중졸</option>
+    			<option>석사</option>
+    			</select></td>
+			<td><select id="" name="">
+    			<option>정규직</option>
+    			<option>일용직</option>
+    			<option>김인직</option>
+    			<option>기타</option>
+    			</select></td>
+			<td><input type="radio" id="" name="cc" checked>&nbsp Y
+			<input type="radio" id="" name="cc" >&nbsp N</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><select id="" name="">
+    			<option>부</option>
+    			<option>모</option>
+    			<option>형</option>
+    			<option>누이</option>
+    			</select></td>
+			<td><input type="text" value="스칼렛"></td>
+			<td><input type="text" value="47"></td>
+			<td><select id="" name="">
+    			<option>대졸</option>
+    			<option>고졸</option>
+    			<option>중졸</option>
+    			<option>석사</option>
+    			</select></td>
+			<td><select id="" name="">
+    			<option>정규직</option>
+    			<option>일용직</option>
+    			<option>김인직</option>
+    			<option>기타</option>
+    			</select></td>
+			<td><input type="radio" id="" name="dd" >&nbsp Y
+			<input type="radio" id="" name="dd" checked >&nbsp N</td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td><select id="" name="">
+    			<option>부</option>
+    			<option>모</option>
+    			<option>형</option>
+    			<option>누이</option>
+    			</select></td>
+			<td><input type="text" value="톰 행크스"></td>
+			<td><input type="text" value="35"></td>
+			<td><select id="" name="">
+    			<option>대졸</option>
+    			<option>고졸</option>
+    			<option>중졸</option>
+    			<option>석사</option>
+    			</select></td>
+			<td><select id="" name="">
+    			<option>정규직</option>
+    			<option>일용직</option>
+    			<option>김인직</option>
+    			<option>기타</option>
+    			</select></td>
+			<td><input type="radio" id="" name="ee" checked>&nbsp Y
+			<input type="radio" id="" name="ee" >&nbsp N</td>
+			<td></td>
+			<td></td>
+		</tr>
+	</table>
+    
+    
+    
+        <script type="text/javascript">
+var myModal = document.getElementById('myModal')
+var myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', function () {
+  myInput.focus()
+})
+</script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

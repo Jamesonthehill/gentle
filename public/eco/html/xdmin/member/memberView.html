@@ -33,7 +33,7 @@
           
           <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-           <i class="fas fa-users" style="padding-right:5px"></i>회원관리
+           <i class="fas fa-users" style="padding-right:5px"></i>회원상세
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="#">회원목록</a></li>
@@ -79,17 +79,24 @@
     
   </head>
   <body style="float: left;">
-    <h1 style="text-align: center;"><image src="../images/sss.png">회원정보</h1>
+    <h1 style="text-align: center;">회원상세</h1>
 	<hr>
-			<a href="./deltaList.html" type="button" class="btn btn-warning btn-lg" style="color:white" onclick="here()">
+			<!-- <a href="./deltaList.html" type="button" class="btn btn-warning btn-lg" style="color:white" onclick="here()">
 		목록</a>
     		<a href="./deltaEdit.html" type="button" class="btn btn-info btn-lg" style="color:white" onclick="here()" >
-    		수정하기</a>  
-    		
+    		수정하기</a>  -->
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="font-family:잘풀리는하루; ">
-  삭제하기
-</button>
+    		<button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="font-family: 잘풀리는하루;  color:white; float: left;">
+			  목록
+			</button>	
+			<button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="font-family: 잘풀리는하루; color:white; float: left;">
+			  수정
+			</button>
+    		<button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="font-family: 잘풀리는하루;  color:white; float: left;">
+			  삭제하기
+			</button>
+
+    	<hr>	
 
 <!-- Modal -->
 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -124,55 +131,55 @@
 
 	<table class="table table-hover">
 		<tr>
-			<td rowspan="7" style="background-color:skyblue; width:10px; color:white; padding-top: 50px;">인적사항</td>
-			<td rowspan="2" style="background-color:skyblue; color:white; text-align:center; margin:auto; width:80px; padding-top: 30px;">이름</td>
-			<td style="background-color:skyblue; color:white; width:80px;">한	글</td>
+			<td rowspan="7" style="background-color:#00bfff; width:10px; color:white; padding-top: 50px;">인적사항</td>
+			<td rowspan="2" style="background-color:#00bfff; color:white; text-align:center; margin:auto; width:80px; padding-top: 30px;">이름</td>
+			<td style="background-color:#00bfff; color:white; width:80px;">한	글</td>
 			<td >제임스</td>
-			<td  style="background-color:skyblue; color:white; width:130px;">주민등록번호</td>
+			<td  style="background-color:#00bfff; color:white; width:130px;">주민등록번호</td>
 			<td>971030-1199922</td>
 			
 		</tr>
 		<tr>
-			<td style="background-color:skyblue; color:white;">영	어</td>
+			<td style="background-color:#00bfff; color:white;">영	어</td>
 			<td>James</td>
-			<td style="background-color:skyblue; color:white;">성별</td>
+			<td style="background-color:#00bfff; color:white;">성별</td>
 			<td><input type="radio" id="" name="" checked disabled>&nbsp남
 				&nbsp<input type="radio" id="" name="" disabled>&nbsp여</td>
 		</tr>
 		<tr>
-			<td style="background-color:skyblue; color:white;">아이디</td>
+			<td style="background-color:#00bfff; color:white;">아이디</td>
 			<td colspan="2">Jamesonthehill</td>
-			<td style="background-color:skyblue; color:white;">비밀번호</td>
+			<td style="background-color:#00bfff; color:white;">비밀번호</td>
 			<td>!jamesjames2221</td>
 
 		</tr>
 		<tr>
-			<td style="background-color:skyblue; color:white;">E-Mail</td>
+			<td style="background-color:#00bfff; color:white;">E-Mail</td>
 			<td colspan="2">sonnyheungmin@hanmail.net</td>
-			<td style="background-color:skyblue; color:white;">마케팅 수신동의</td>
+			<td style="background-color:#00bfff; color:white;">마케팅 수신동의</td>
 			<td><input type="radio" id="" name="" checked disabled>&nbsp예
 			&nbsp<input type="radio" id="" name="" disabled>&nbsp아니오</td>
 
 		</tr>
 		<tr>
-			<td style="background-color:skyblue; color:white;">자택전화</td>
+			<td style="background-color:#00bfff; color:white;">자택전화</td>
 			<td colspan="2">02.543-0278</td>
-			<td style="background-color:skyblue; color:white;">휴대폰</td>
+			<td style="background-color:#00bfff; color:white;">휴대폰</td>
 			<td>010-3394-2911</td>
 		</tr>
 		<tr>
-			<td style="background-color:skyblue; color:white;">결혼여부</td>
+			<td style="background-color:#00bfff; color:white;">결혼여부</td>
 			<td colspan="2"><select disabled>
 				<option>미혼</option>	
 				<option>기혼</option>	
 				<option>재혼</option>	
 			</select></td>
-			<td style="background-color:skyblue; color:white;">자녀여부</td>
+			<td style="background-color:#00bfff; color:white;">자녀여부</td>
 			<td colspan="2"><input type="radio" id="" name=""  disabled>&nbsp Y
 				&nbsp<input type="radio" id="" name=""  checked  disabled>&nbspN</td>
 		</tr>
 		<tr>
-			<td style="background-color:skyblue; color:white;">주	소</td>
+			<td style="background-color:#00bfff; color:white;">주	소</td>
 			<td colspan="5">경기도 성남시 수정구 복정동 아름마을로 102동 1101호</td>
 		</tr>
 		
@@ -181,11 +188,11 @@
 <div style="height:10px;"></div>
 	<table class="table table-hover" >
 		<tr>
-			<td rowspan="4" style="background-color:skyblue; color:white; width: 10px; padding-top: 30px;">학력사항</td>
-			<td style="background-color:skyblue; color:white;">학교명</td>
-			<td style="background-color:skyblue; color:white;">재학기간</td>
-			<td style="background-color:skyblue; color:white;">전	공</td>
-			<td colspan="2" style="background-color:skyblue; color:white;">부 전공</td>
+			<td rowspan="4" style="background-color:#00bfff; color:white; width: 10px; padding-top: 30px;">학력사항</td>
+			<td style="background-color:#00bfff; color:white;">학교명</td>
+			<td style="background-color:#00bfff; color:white;">재학기간</td>
+			<td style="background-color:#00bfff; color:white;">전	공</td>
+			<td colspan="2" style="background-color:#00bfff; color:white;">부 전공</td>
 
 			
 		</tr>
@@ -212,11 +219,11 @@
     <div>
     <table  class="table table-hover" >
     	<tr>
-    		<td rowspan="4" style="background-color:skyblue; color:white; width: 10px; padding-top: 60px;">프로젝트</td>
-    		<td style="background-color:skyblue; color:white; width:150px;">프로젝트명</td>
-    		<td colspan="2" style="background-color:skyblue; color:white; width: 200px;">참여기간</td>
-    		<td style="background-color:skyblue; color:white; width:150px;">역할</td>
-    		<td style="background-color:skyblue; color:white; width: 150px;">위탁회사</td>
+    		<td rowspan="4" style="background-color:#00bfff; color:white; width: 10px; padding-top: 60px;">프로젝트</td>
+    		<td style="background-color:#00bfff; color:white; width:150px;">프로젝트명</td>
+    		<td colspan="2" style="background-color:#00bfff; color:white; width: 200px;">참여기간</td>
+    		<td style="background-color:#00bfff; color:white; width:150px;">역할</td>
+    		<td style="background-color:#00bfff; color:white; width: 150px;">위탁회사</td>
     	</tr>
     	<tr>
     			<td>엔비티 사이트 구축</td>
@@ -244,15 +251,15 @@
     	
     <table class="table table-hover" >
 		<tr>
-			<td rowspan="4" style="background-color:skyblue; color:white; width:10px; padding-top: 40px;">가족사항</td>
-			<td style="background-color:skyblue; color:white;">관계</td>
-			<td style="background-color:skyblue; color:white;">성	명</td>
-			<td style="background-color:skyblue; color:white;">연 령</td>
-			<td style="background-color:skyblue; color:white;">합 력</td>
-			<td style="background-color:skyblue; color:white;">직 업</td>
-			<td style="background-color:skyblue; color:white;">동 거</td>
-			<td class="aaa "rowspan="5" style="background-color:skyblue; color:white; width: 10px; padding-top: 50px;">기타사항</td>
-			<td colspan="2" style="background-color:skyblue; color:white;">취득 자격증</td>
+			<td rowspan="4" style="background-color:#00bfff; color:white; width:10px; padding-top: 40px;">가족사항</td>
+			<td style="background-color:#00bfff; color:white;">관계</td>
+			<td style="background-color:#00bfff; color:white;">성	명</td>
+			<td style="background-color:#00bfff; color:white;">연 령</td>
+			<td style="background-color:#00bfff; color:white;">합 력</td>
+			<td style="background-color:#00bfff; color:white;">직 업</td>
+			<td style="background-color:#00bfff; color:white;">동 거</td>
+			<td class="aaa "rowspan="5" style="background-color:#00bfff; color:white; width: 10px; padding-top: 50px;">기타사항</td>
+			<td colspan="2" style="background-color:#00bfff; color:white;">취득 자격증</td>
 			
 		</tr>
 		<tr>
@@ -325,7 +332,8 @@ myModal.addEventListener('shown.bs.modal', function () {
 	
 </script>
  
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script 
+="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
   
   </body>

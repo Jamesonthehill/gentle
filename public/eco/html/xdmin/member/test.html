@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Bootstrap CSS -->
+<script src="https://kit.fontawesome.com/b322818db5.js"
+	crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+	integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+	crossorigin="anonymous">
+<title>로그인 폼</title>
+<style>
+
+		body, html {
+			display: grid; 
+			height: 100vh;  
+    		place-items: center;  
+    		}
+    	.box{
+    		padding: 20px;
+    		box-shadow: 5px 5px 10px 10px rgba(0,0,0,0.25);
+    		}
+		input{
+			width : 400px;
+		}
+		.logo{
+			text-align:center;
+			font-weight: 600;
+		}
+		
+		.idd{
+			border-radius: 5px;
+		}
+		.passwordd{
+			border-radius: 5px;
+		}
+		.login{
+			background-color: grey;
+			color: white;
+			border-radius: 5px;
+		}
+
+		.naver{
+			margin-top: 10px;
+			text-align:center;
+			padding-top: 10px;
+			border-radius: 5px;
+			background-color: green;
+			color: white;
+			}
+		.kakao{
+			margin-top: 10px;
+			text-align:center;
+			padding-top: 10px;
+			border-radius: 5px;
+			background-color: yellow;
+			color: white;
+			}
+		.google{
+			margin-top: 10px;
+			text-align:center;
+			padding-top: 10px;
+			border-radius: 5px;
+			background-color:red ;
+			color: white;
+			}
+		.facebook {
+			margin-top: 10px;
+			text-align:center;
+			padding-top: 10px;
+			border-radius: 5px;
+			background-color: blue;
+			color: white;
+			}
+</style>	
+</head>
+
+<body>
+		<form action="#">
+		<div class="box">
+		<div class="logo">
+			<h1><strong>Your</strong></h1>
+			<h1><strong>Company</strong></h1>
+			<h1><strong>Logo</strong></h1>
+		</div>
+		<br><br>
+			<div>
+				<input class="idd" type="text" placeholder="ID" maxlength="30">
+			</div>
+			<br>
+			<div>
+				<input class="passwordd" type="password" placeholder="Password" maxlength="16">
+				</div>
+			<br>
+			<div class="form-check form-switch">
+				<input class="form-check-input" type="checkbox"
+					id="flexSwitchCheckChecked" style="float:left" checked> 
+					<span><a>Auto login</a></span>
+			</div>
+			<br>
+			<div class="input_box button fff">
+				<input class="login" type="submit" value="Login">
+			</div>
+			<br>
+			<div style="text-align: center;";>
+				<Span><a href="#">Find Id/Password</a></Span>
+			</div>
+			<hr><br>
+				<div>
+					<input class="naver" type=button; id="" name="" value="Naver">
+				</div>
+				<div>
+					<input class="kakao" type=button; id="" name="" value="Kakao">
+				</div>
+				<div>	
+					<input class="google" type=button; id="" name="" value="Google">
+				</div>
+				<div>
+					<input class="facebook" type=button; id="" name="" value="Facebook">
+				</div>
+				</div>
+		</form>
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+		crossorigin="anonymous"></script>
+
+</body>
+</html>
